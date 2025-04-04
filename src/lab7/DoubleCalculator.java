@@ -1,3 +1,5 @@
+package lab7;
+
 public class DoubleCalculator extends ACalculator {
     void init(){
 
@@ -6,16 +8,20 @@ public class DoubleCalculator extends ACalculator {
     public  DoubleCalculator (double state){
         this.state = state;
     }
-    public   DoubleCalculator add(double nr){
+    public DoubleCalculator add(double nr){
         this.state=state+nr;
         return this;
     }
-    public   DoubleCalculator subtract(double nr){
+    public DoubleCalculator subtract(double nr){
         this.state=state-nr;
         return this;
     }
-    public   DoubleCalculator multiply(double nr){
+    public DoubleCalculator multiply(double nr){
         this.state=state*nr;
+        return this;
+    }
+    public DoubleCalculator divide(double nr){
+        this.state=state/nr;
         return this;
     }
     public  Double result() {

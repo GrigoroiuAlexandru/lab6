@@ -1,3 +1,5 @@
+package lab7;
+
 abstract class ACalculator{
     protected Object state;
 
